@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./index.js"></script>
+    <title>Aether's Artifact Data</title>
+</head>
+<body>
+    <form id="form" onsubmit="addchars(); return false;">
+         <div class="omrs-input-group">
+             <label class="omrs-input-underlined">
+                 <input type="text" class="form-control link" id='charactername' required /> <span
+                     class="omrs-input-label">Character Name</span>
+                 <div class="fas ic fa-user-secret" width="24" height="24" viewBox="0 0 24 24">
+                 </div>
+             </label>
+         </div>
+      <div class="omrs-input-group">
+          <label class="omrs-input-underlined">
+              <input type="text" class="form-control link" id='buildname' required /> <span
+                  class="omrs-input-label">Build Name</span>
+              <div class="fas ic fa-user-secret" width="24" height="24" viewBox="0 0 24 24">
+              </div>
+          </label>
+      </div>
+       <div class="omrs-input-group">
+           <label class="omrs-input-underlined">
+               <input type="text" class="form-control link"  id='builddescription' required /> <span
+                   class="omrs-input-label">Build Description</span>
+               <div class="fas ic fa-user-secret" width="24" height="24" viewBox="0 0 24 24">
+               </div>
+           </label>
+       </div>
+       <div class="omrs-input-group">
+           <label class="omrs-input-underlined">
+               <input type="text" class="form-control link"  id='buildweapon' required /> <span
+                   class="omrs-input-label">Build Weapon</span>
+               <div class="fas ic fa-user-secret" width="24" height="24" viewBox="0 0 24 24">
+               </div>
+           </label>
+       </div>
+       <div class="omrs-input-group">
+           <label class="omrs-input-underlined">
+               <input type="text" class="form-control link"  id='buildweaponstat' required /> <span
+                   class="omrs-input-label">Build Weapon Stat</span>
+               <div class="fas ic fa-user-secret" width="24" height="24" viewBox="0 0 24 24">
+               </div>
+           </label>
+       </div>
+         <div class="omrs-input-group">
+             <label class="omrs-input-underlined">
+                 <input type="text" class="form-control link"  id='buildweaponbonus' required /> <span
+                     class="omrs-input-label">Build Weapon Bonus</span>
+                 <div class="fas ic fa-user-secret" width="24" height="24" viewBox="0 0 24 24">
+                 </div>
+             </label>
+         </div>
+             <div class="omrs-input-group">
+                 <label class="omrs-input-underlined">
+                     <input type="text" class="form-control link" id='buildartifacts' required /> <span
+                         class="omrs-input-label">Build Artifacts(seperated by commas)</span>
+                     <div class="fas ic fa-user-secret" width="24" height="24" viewBox="0 0 24 24">
+                     </div>
+                 </label>
+             </div>
+             <button class="submit" >Submit</button>
+    </form>
+    <div class="codecontainer" onclick="copy()"> <code id="return"></code></div>
+    <div id="snackbar">Copied</div>
+
+</body>
+</html>
